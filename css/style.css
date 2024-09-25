@@ -1,7 +1,7 @@
 @font-face {
   font-family: "HubotSansExpanded";
-  src: url("../fonts/HubotSansExpanded-Black.woff2") format("woff2"),
-    url("../fonts/HubotSansExpanded-Black.ttf") format("truetype");
+  src: url("../fonts/HubotSansExpanded-ExtraBold.woff2") format("woff2"),
+    url("../fonts/HubotSansExpanded-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
