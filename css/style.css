@@ -171,14 +171,6 @@ header {
   color: white;
 }
 
-.outer-container {
-  background-color: #00000078;
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-}
-
 .section-home-hero {
   background-image: image-set(
     "../assets/66a7648adc7d1b39fe04db10_hero-bg.avif"
