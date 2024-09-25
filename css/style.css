@@ -50,13 +50,20 @@ header {
   position: fixed;
   top: 78px;
   left: 0;
+  height: 100%;
   right: 0;
+  background-color: white;
   overflow: hidden;
+}
+.fixed {
+  position: fixed;
+  z-index: 111;
 }
 .navigation {
   background-color: white;
   padding: 20px 40px;
   display: grid;
+  height: 60%;
   grid-column-gap: 1rem;
   transition: all, transform 400ms;
   transform: translateY(0px) translateX(0px);
@@ -75,7 +82,7 @@ header {
   font-size: large;
 }
 .navigation .active {
-  font-weight: 400;
+  font-weight: bold;
   border-bottom: 1px solid black;
 }
 

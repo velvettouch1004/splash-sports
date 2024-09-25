@@ -33,7 +33,7 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <div id="navbar" class="navbar">
       <div class="nav_container">
         <a href="#">
           <img
@@ -1973,11 +1973,15 @@
       document.getElementById("open").style.display = "none";
       document.getElementById("nav").style.display = "block";
       document.getElementById("close").style.display = "flex";
+      var mavnar = document.getElementById("navbar");
+      navbar.className += " fixed";
     };
     const hidenav = () => {
       document.getElementById("open").style.display = "flex";
       document.getElementById("close").style.display = "none";
       document.getElementById("nav").style.display = "none";
+      var mavnar = document.getElementById("navbar");
+      navbar.className = "navbar";
     };
   </script>
   <!-- <script
