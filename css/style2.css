@@ -632,9 +632,10 @@ p {
   font-family: Hubotsansexpanded, sans-serif;
   font-size: 3.75rem;
   font-weight: 800;
+  line-height: 1.1;
 }
 .hero_heading-handwritten {
-  font-family: Coveredbyyourgrace, sans-serif;
+  font-family: "Covered By Your Grace", sans-serif;
   font-size: 5rem;
   font-weight: 400;
   line-height: 1;

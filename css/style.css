@@ -50,10 +50,17 @@ header {
   position: fixed;
   top: 78px;
   left: 0;
+  height: 100%;
   right: 0;
+  background-color: white;
   overflow: hidden;
 }
+.fixed {
+  position: fixed;
+  z-index: 111;
+}
 .navigation {
+  height: 50%;
   background-color: white;
   padding: 20px 40px;
   display: grid;
@@ -177,7 +184,7 @@ header {
 .home-hero-heading {
   text-transform: uppercase;
   max-width: 45rem;
-  font-family: Hubotsansexpanded, sans-serif;
+  font-family: "hubot-Sans 400", sans-serif;
   font-size: 3.75rem;
   font-weight: 800;
 }
@@ -188,7 +195,8 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 5rem;
-  font-family: "Covered By Your Grace";
+  font-family: "Covered By Your Grace", sans-serif;
+
   /* src: url("../assets/fonts/CoveredByYourGrace-Regular.ttf") format("truetype"); */
   font-weight: 400;
   line-height: 1;
@@ -325,9 +333,9 @@ header {
 }
 
 .home-guide-heading h1 {
-  font-family: Hubotsansexpanded, sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
+  /* font-family: "Hubot-Sans"; */
 }
 
 .games-guide-item {
@@ -401,7 +409,6 @@ header {
   text-align: center;
   letter-spacing: -1px;
   text-transform: uppercase;
-  font-family: Hubotsansexpanded, sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
@@ -439,8 +446,9 @@ header {
   overflow: auto;
 }
 
-.home-games-menu .d-flex {
-  justify-content: center;
+.home-games-menu .flex {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .home-games-menu a {
@@ -450,10 +458,11 @@ header {
   margin: 0 30px;
   text-transform: uppercase;
   letter-spacing: -1px;
+
   white-space: nowrap;
-  font-family: Hubotsanscondensed, sans-serif;
+  font-family: "hubot-Sans", sans-serif;
   font-size: 26px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .home-games-menu span {
@@ -523,6 +532,8 @@ header {
   z-index: 1;
   align-self: center;
   font-size: 16px;
+  font-weight: 500;
+  color: #cccccc;
 }
 
 .home-games-content-left-col div {
@@ -565,6 +576,8 @@ header {
 
 .home-games-content-right-col img {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .section-games-p2p {
@@ -576,7 +589,7 @@ header {
   background-repeat: no-repeat, no-repeat;
   background-size: 55%, cover;
   position: relative;
-  padding: 70px 0;
+  padding: 70px 0 20px 0;
   color: white;
 }
 
@@ -584,7 +597,6 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
-  grid-row-gap: 1rem;
 }
 
 .games-p2p-heading-title {
@@ -592,7 +604,7 @@ header {
   text-align: center;
   letter-spacing: -1px;
   text-transform: uppercase;
-  font-family: Hubotsansexpanded, sans-serif;
+  font-family: "hubot-Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
@@ -619,7 +631,7 @@ header {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: grid;
   position: relative;
   align-items: center;
@@ -696,10 +708,14 @@ header {
 
 .games-p2p-image {
   position: relative;
+  height: 85%;
 }
 
 .games-p2p-image img {
+  object-fit: cover;
+  object-position: 50% 0%;
   width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -720,7 +736,7 @@ header {
   text-align: center;
   letter-spacing: -1px;
   text-transform: uppercase;
-  font-family: Hubotsansexpanded, sans-serif;
+  font-family: "hubot-Sans 400", sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
@@ -922,4 +938,23 @@ header {
 
 .button-text-signup a {
   color: #4b5258;
+}
+
+.learn-more {
+  color: #000000;
+  text-align: center;
+  background-color: #0000;
+  border: 2px solid #000;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.75rem 1.125rem;
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.5;
+  transition: all 0.2s;
+  display: flex;
+  border-radius: 10px;
 }

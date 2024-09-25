@@ -26,6 +26,7 @@
       href="https://fonts.googleapis.com/css?family=Covered By Your Grace"
       rel="stylesheet"
     />
+    <link href="https://fonts.cdnfonts.com/css/hubot-sans" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/style2.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -33,7 +34,7 @@
   </head>
 
   <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <div class="nav_container">
         <a href="#">
           <img
@@ -147,71 +148,6 @@
       </div>
     </header>
     <main>
-      <!-- <section class="section-home-hero">
-        <div class="outer-container"></div>
-        <div class="container">
-          <div class="flex">
-            <div class="section-home-hero-content">
-              <h1 class="home-hero-heading">
-                <span>play</span>
-                big Contests & win big
-                <span>money</span>
-              </h1>
-              <p>
-                Win real money playing the games you know: Survivor, Daily
-                Fantasy Contests, Pick'Em, Confidence, and more. Play in
-                Guaranteed Contests or against your friends.
-              </p>
-              <div class="button_grid">
-                <button class="white-black">Play Now</button>
-                <button class="black-white">
-                  Downlaod and Play
-                  <img src="./assets/apple.svg" alt="" />
-                  <img src="./assets/embed.svg" alt="" />
-                </button>
-              </div>
-              <div class="owner">FROM THE OWNERS OF</div>
-              <div class="hero-banner">
-                <img src="./assets/66d84a02df0cee3f2186985e_Union.svg" alt="" />
-                <img
-                  src="./assets/66d84a02fe4174f7802a6e34_Vector.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="home-hero-images">
-              <img
-                class="dollar-1"
-                src="./assets/66a7648982fcf87c01c23bdf_hero-bg-dollar.svg"
-                alt=""
-              />
-              <img
-                class="dollar-2"
-                src="./assets/66a7648982fcf87c01c23bdf_hero-bg-dollar.svg"
-                alt=""
-              />
-              <img
-                class="dollar-3"
-                src="./assets/66a7648982fcf87c01c23bdf_hero-bg-dollar.svg"
-                alt=""
-              />
-              <img
-                src="./assets/66d97825b58155d9ad56bf0d_iPhone.avif"
-                alt=""
-                class="i-phone"
-              />
-              <img
-                src="./assets/66d978256bae13353dabeca2_iPhone-1.avif"
-                class="phone"
-                alt=""
-              />
-              <div class="image-background-gradient"></div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <section></section>
-
       <section class="section_home-hero">
         <div class="outer-container">
           <div class="home_hero-component">
@@ -360,8 +296,7 @@
         <div
           id="w-node-d7969453-b023-4b5b-cc25-d4d2f7a6b5a4-853fa0c6"
           class="hide w-embed"
-        >
-        </div>
+        ></div>
       </section>
       <section class="section-home-guide">
         <div class="home-guide-heading">
@@ -1344,7 +1279,7 @@
             id="w-node-c39b7ddd-f5ff-486c-0b89-ecc37619f0ef-7619f09b"
             data-w-id="c39b7ddd-f5ff-486c-0b89-ecc37619f0ef"
             href="#"
-            class="button-secondary load-more w-button"
+            class="learn-more"
             >Load more</a
           >
         </div>
@@ -2126,11 +2061,15 @@
       document.getElementById("open").style.display = "none";
       document.getElementById("nav").style.display = "block";
       document.getElementById("close").style.display = "flex";
+      var mavnar = document.getElementById("navbar");
+      navbar.className += " fixed";
     };
     const hidenav = () => {
       document.getElementById("open").style.display = "flex";
       document.getElementById("close").style.display = "none";
       document.getElementById("nav").style.display = "none";
+      var mavnar = document.getElementById("navbar");
+      navbar.className = "navbar";
     };
   </script>
   <!-- <script

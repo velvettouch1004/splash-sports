@@ -159,6 +159,12 @@
     display: none !important;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .games-section-handwritten {
+    font-size: 112px;
+  }
+}
 @media screen and (max-width: 768px) {
   .home-hero-heading {
     font-size: 28px;
@@ -176,7 +182,7 @@
     display: none;
   }
   .availability-button-group {
-    max-width: 320px;
+    width: 100%;
     grid: none;
   }
   .games-p2p-image {
